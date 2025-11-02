@@ -78,5 +78,3 @@ chmod +x start_kios.sh
 3. Open a pull request with a clear description of your changes.  
 
 ---
-
-## 📜 Licen
