@@ -1,6 +1,6 @@
 # MotionEye Automation Template
 
-A lightweight, configurable Raspberry Pi automation system for MotionEye surveillance setups.  
+A lightweight, configurable Raspberry Pi automation system for multi-camera MotionEye surveillance setups.  
 This project provides a reusable framework to quickly deploy, configure, and run a Pi-based MotionEye system with minimal setup.
 
 ---
