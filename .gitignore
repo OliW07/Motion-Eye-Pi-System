@@ -1,0 +1,6 @@
+*.img
+*.gz
+*.bak
+*.log
+*.env
+.DS_Store

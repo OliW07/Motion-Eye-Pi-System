@@ -1,0 +1,5 @@
+{
+  "enableSlideShow": true,
+  "slideShowIntervalMs": 2000,
+  "cameraNames": ["camera1", "camera2", "camera3", "camera4"]
+}
