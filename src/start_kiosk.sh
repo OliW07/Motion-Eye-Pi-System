@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Define necessary variables explicitly
 export DISPLAY=:0
 export XAUTHORITY=/home/pi/.Xauthority
 
@@ -16,7 +15,6 @@ while true; do
     fi
     sleep 5 # Wait 5 seconds before checking again
 done
-# --- End Wait Loop ---
 
 # Use the validated IP here
 # Command to run Chromium
@@ -27,8 +25,6 @@ CHROMIUM_CMD="/usr/bin/chromium --password-store=basic --start-fullscreen \
     --disable-infobars \
     --disable-features=TranslateUI,RendererCodeIntegrity --app=http://$IP:8765"
 
-
-echo "Chromium will open URL: http://$IP:8765" >> /tmp/kiosk_startup_check.log
 
 while true
 do
