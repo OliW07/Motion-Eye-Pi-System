@@ -11,14 +11,10 @@
 (function () {
   'use strict';
 
-  // ------------------------------
-  // CONFIG
-  // ------------------------------
   const CONFIG_URL = `http://${window.location.hostname}/security-cameras.json?nocache=${Date.now()}`;
 
-  let cameraIDs = ['camera1', 'camera2', 'camera3', 'camera4'];
-  let intervalSeconds = 5;
-  let enableSlideShow = true;
+  var intervalSeconds, enableSlideShow;
+
   const gridRows = 2;
   const gridCols = 2;
 
@@ -30,15 +26,17 @@
   )
   {return};
 
-  // ------------------------------
+
   // UTILITIES
-  // ------------------------------
+
   function setStyles(el, styles = {}) {
     if (!el) return;
     Object.entries(styles).forEach(([prop, val]) => {
       el.style.setProperty(prop, val, 'important');
     });
   }
+
+  //Dynanically edit the motioneye CSS to enable a full app-like experience
 
   function hideUI() {
     const hideSelectors = [
@@ -72,9 +70,6 @@
 
   }
 
-  // ------------------------------
-  // GRID MODE
-  // ------------------------------
   function setupStaticGrid() {
     const cameras = document.querySelectorAll('div.camera-frame');
     if (cameras.length === 0) {
@@ -115,9 +110,6 @@
     });
   }
 
-  // ------------------------------
-  // SLIDESHOW MODE
-  // ------------------------------
   function setupSlideShow() {
     const cameras = document.querySelectorAll('div.camera-frame');
     if (cameras.length === 0) {
@@ -155,9 +147,6 @@
     }, intervalSeconds * 1000);
   }
 
-  // ------------------------------
-  // MAIN INIT
-  // ------------------------------
   function init() {
     hideUI();
 
@@ -171,9 +160,8 @@
     }
   }
 
-  // ------------------------------
   // LOAD JSON CONFIG
-  // ------------------------------
+
   GM_xmlhttpRequest({
     method: 'GET',
     url: CONFIG_URL,
