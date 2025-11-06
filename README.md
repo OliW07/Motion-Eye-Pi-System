@@ -1,7 +1,7 @@
 # MotionEye Automation Template
 
 A lightweight, configurable Raspberry Pi automation system for multi-camera MotionEye surveillance setups.  
-This project provides a reusable framework to quickly deploy, configure, and run a Pi-based MotionEye system with minimal setup.
+This project provides a reusable framework for quickly deploying, configuring, and running a Pi-based MotionEye system with minimal setup. Using the Tampermonkey Chrome extension, MotionEye is dynamically adjusted to enable slideshows and automatic grid scaling for 2x2 grids.
 
 ---
 
@@ -9,7 +9,7 @@ This project provides a reusable framework to quickly deploy, configure, and run
 
 motioneye-automation/
 ├── src/
-│   ├── main.user.js          # Main automation script
+│   ├── main.user.js          # Main automation tampermonkey script
 │   ├── config_template.json  # Example/template configuration
 │   └── start_kios.sh         # Launch script for the system
 ├── docs/
