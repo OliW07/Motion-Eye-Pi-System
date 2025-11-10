@@ -53,7 +53,12 @@ nano config.json  # Edit values for your setup
 chmod +x start_kios.sh
 ```
 
-4. **Run the system**:
+4. **Install the tampermonkey user script**
+
+   Open the tampermonkey extension, and upload the .user.js or (optionally) serve it and automate it for fast distrubtion via your local webserver.
+
+
+5. **Run the system**:
 
 ```bash
 ./start_kios.sh
