@@ -5,19 +5,6 @@ This project provides a reusable framework for quickly deploying, configuring, a
 
 ---
 
-## Project Structure
-
-motioneye-automation/
-├── src/
-│   ├── main.user.js          # Main automation tampermonkey script
-│   ├── config_template.json  # Example/template configuration
-│   └── start_kios.sh         # Launch script for the system
-├── docs/
-│   ├── User_Guide.pdf
-│   └── Admin_Guide.pdf
-├── .gitignore                # Excludes build artifacts and sensitive files
-└── README.md
-
 
 ---
 
@@ -30,7 +17,7 @@ motioneye-automation/
 
 ---
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**:
 
@@ -68,7 +55,7 @@ chmod +x start_kios.sh
 
 ---
 
-## 🗑️ Notes
+## Notes
 
 - Do **not** commit sensitive information such as client-specific credentials.  
 - Keep your final Pi image (`.img.gz`) separate; this repository is intended for reusable scripts and templates.  
@@ -76,7 +63,7 @@ chmod +x start_kios.sh
 
 ---
 
-## 💡 How to Contribute
+## How to Contribute
 
 1. Fork the repository.  
 2. Make your changes in a branch.  
