@@ -5,9 +5,6 @@ This project provides a reusable framework for quickly deploying, configuring, a
 
 ---
 
-
----
-
 ## Features
 
 - Config-driven automation: Customize the system using `config_template.json`.
