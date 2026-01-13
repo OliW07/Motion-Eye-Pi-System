@@ -11,7 +11,7 @@ while true; do
 
     if [ -n "$IP" ]; then
 
-        #Delay ten seconds to ensure that if chromium crashed it now has enough time to remove any lock files and therefore tampermonkey can properly load.
+        //Delay ten seconds to ensure that if chromium crashed it now has enough time to remove any lock files and therefore tampermonkey can properly load.
         sleep 10
         echo "Found IP: $IP. Starting Chromium."
         break
