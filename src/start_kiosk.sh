@@ -10,6 +10,9 @@ while true; do
     IP=$(ip addr show | grep 'inet ' | grep -v '127.0.0.1' | awk '{print $2}' | cut -d/ -f1 | head -n 1)
 
     if [ -n "$IP" ]; then
+
+        //Delay ten seconds to ensure that if chromium crashed it now has enough time to remove any lock files and therefore tampermonkey can properly load.
+        sleep 10
         echo "Found IP: $IP. Starting Chromium."
         break
     fi
