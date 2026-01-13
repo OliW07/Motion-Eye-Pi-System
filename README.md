@@ -52,18 +52,4 @@ chmod +x start_kios.sh
 
 ---
 
-## Notes
 
-- Do **not** commit sensitive information such as client-specific credentials.  
-- Keep your final Pi image (`.img.gz`) separate; this repository is intended for reusable scripts and templates.  
-- Documentation is provided in `docs/`.
-
----
-
-## How to Contribute
-
-1. Fork the repository.  
-2. Make your changes in a branch.  
-3. Open a pull request with a clear description of your changes.  
-
----
